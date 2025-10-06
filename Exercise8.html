@@ -1,75 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de prueba de HTML5</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise8</title>
 </head>
+
 <body>
-    <h1>Formulario de Información</h1>
-    <form action="" method="get">
-        
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="name" name="name" required autofocus>
-        <br><br>
+  <h1>Formulario de Contacto</h1>
 
-        <!-- Correo electrónico -->
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
+  <form action="#" method="post">
+    
+    <!-- Nombre -->
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
 
-        <!-- URL -->
-        <label for="url">URL:</label>
-        <input type="url" id="url" name="url" placeholder="Escribe la URL de tu página web personal">
-        <br><br>
+    <!-- Apellidos -->
+    <label for="apellidos">Apellidos:</label><br>
+    <input type="text" id="apellidos" name="apellidos" maxlength="30"><br><br>
 
-         <!-- Teléfono -->
-        <label for="telephone">Teléfono:</label>
-        <input type="tel" id="telephone" name="telephone">
-        <br><br>
+    <!-- Email (obligatorio) -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
 
-        <!-- Fecha -->
-        <label for="fecha">Fecha:</label>
-        <input type="date" id="date" name="date">
-        <br><br>
+    <!-- Asunto (cajetín con size) -->
+    <label for="asunto">Asunto:</label><br>
+    <select id="asunto" name="asunto" size="1">
+      <option value="presupuesto">Pedir presupuesto</option>
+      <option value="cita">Solicitar cita previa</option>
+      <option value="otros">Otros</option>
+    </select><br><br>
 
-        <!-- Tiempo -->
-        <label for="time">Tiempo:</label>
-        <input type="time" id="time" name="time">
-        <br><br>
+    <!-- ¿Cómo nos has conocido? -->
+    <label for="conocido">¿Cómo nos has conocido?</label><br>
+    <select id="conocido" name="conocido">
+      <option value="amigo">Por un amigo</option>
+      <option value="redes">Por redes sociales</option>
+      <option value="correo">Por un correo</option>
+      <option value="anuncio">Por un anuncio</option>
+    </select><br><br>
 
-        <!-- Fecha y hora -->
-        <label for="datetime">Fecha y hora:</label>
-        <input type="datetime-local" id="datetime" name="datetime">
-        <br><br>
+    <!-- Mensaje -->
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" maxlength="300" rows="5" cols="40"></textarea><br><br>
 
-        <!-- Mes -->
-        <label for="month">Mes:</label>
-        <input type="month" id="month" name="month">
-        
+    <!-- RGPD -->
+    <input type="checkbox" id="rgpd" name="rgpd" required>
+    <label for="rgpd">Acepto la cláusula RGPD</label><br><br>
 
-        <!-- Semana -->
-        <label for="semana">Semana:</label>
-        <input type="week" id="week" name="week">
-        <br><br>
+    <!-- Botón de enviar -->
+    <button type="submit">Enviar</button>
 
-        <!-- Número -->
-        <label for="number">Número (-10 a 10):</label>
-        <input type="number" imber" name="number" min="-10" max="10">
-        <br><br>
-
-        <!-- Término de búsqueda -->
-        <label for="search">Término de búsqueda:</label>
-        <input type="search" id="search" name="search">
-        <br><br>
-
-        <!-- Color favorito -->
-        <label for="color">Color favorito:</label>
-        <input type="color" id="color" name="color">
-        <br><br>
-
-        <!-- Botón de envío -->
-        <button type="submit">Enviar</button>
-    </form>
+  </form>
 </body>
 </html>
